@@ -139,7 +139,7 @@ class Predictor(BasePredictor):
         
         # Generate random seed if seed is 0
         if seed == 0:
-            seed = np.random.randint(1, 10000)
+            seed = int.from_bytes(os.urandom(2), "big")
         
         set_seed(seed)
         

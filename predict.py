@@ -99,7 +99,7 @@ class Predictor(BasePredictor):
         image: Path = Input(description="Input image for 3D mesh generation"),
         num_parts: int = Input(
             description="Number of parts to generate", 
-            default=10, 
+            default=8, 
             ge=1, 
             le=16
         ),
@@ -111,7 +111,7 @@ class Predictor(BasePredictor):
         ),
         num_tokens: int = Input(
             description="Number of tokens for generation", 
-            default=2048, 
+            default=1024, 
             choices=[256, 512, 1024, 1536, 2048]
         ),
         num_inference_steps: int = Input(

@@ -111,7 +111,7 @@ class Predictor(BasePredictor):
         ),
         num_tokens: int = Input(
             description="Number of tokens for generation", 
-            default=1024, 
+            default=2048, 
             choices=[256, 512, 1024, 1536, 2048]
         ),
         num_inference_steps: int = Input(

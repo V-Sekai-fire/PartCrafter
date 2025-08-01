@@ -15,7 +15,7 @@ PartCrafter is a structured 3D generative model based on compositional latent di
 ### Input Parameters
 
 - **image**: Input image for 3D mesh generation (required)
-- **num_parts**: Number of parts to generate (1-16, default: 10)
+- **num_parts**: Number of parts to generate (1-16, default: 16)
 - **seed**: Random seed for reproducibility (0 for random, default: 0)
 - **num_tokens**: Number of tokens for generation (256/512/1024/1536/2048, default: 1024)
 - **num_inference_steps**: Number of inference steps (10-100, default: 50)

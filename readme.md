@@ -21,7 +21,7 @@ PartCrafter is a structured 3D generative model based on compositional latent di
 - **num_inference_steps**: Number of inference steps (10-100, default: 50)
 - **guidance_scale**: Guidance scale for generation (1.0-15.0, default: 7.0)
 - **remove_background**: Remove background from input image (default: false)
-- **use_flash_decoder**: Use flash decoder for faster inference (default: false)
+- **use_flash_decoder**: Use flash decoder for faster inference (default: true)
 
 ### Output
 

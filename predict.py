@@ -131,8 +131,8 @@ class Predictor(BasePredictor):
             default=False
         ),
         use_flash_decoder: bool = Input(
-            description="Use flash decoder for faster inference", 
-            default=True
+            description="Use flash decoder for faster inference (Tempermental?)", 
+            default=False
         ),
     ) -> Path:
         """Generate structured 3D mesh from input image"""

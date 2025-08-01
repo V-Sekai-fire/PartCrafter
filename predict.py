@@ -99,7 +99,7 @@ class Predictor(BasePredictor):
         image: Path = Input(description="Input image for 3D mesh generation"),
         num_parts: int = Input(
             description="Number of parts to generate", 
-            default=8, 
+            default=4, 
             ge=1, 
             le=16
         ),
@@ -132,7 +132,7 @@ class Predictor(BasePredictor):
         ),
         use_flash_decoder: bool = Input(
             description="Use flash decoder for faster inference (Tempermental?)", 
-            default=False
+            default=True
         ),
     ) -> Path:
         """Generate structured 3D mesh from input image"""
